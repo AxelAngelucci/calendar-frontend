@@ -1,0 +1,17 @@
+.day_item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px;
+    text-shadow: #535A4E 1px 0 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}

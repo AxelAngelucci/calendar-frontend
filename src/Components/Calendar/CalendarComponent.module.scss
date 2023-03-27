@@ -1,0 +1,68 @@
+.week_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+.days_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 10vh);
+}
+
+.day_of_week {
+    color: white;
+    text-align: center;
+    line-height: 2;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.day_item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: #535A4E 1px 0 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.calendar_container {
+    width: 90vw;
+    height: 100vh;
+
+    h3 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+.navigate_panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.button {
+    background-color: #BC1223;
+    border: none;
+    color: white;
+    width: 40px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
