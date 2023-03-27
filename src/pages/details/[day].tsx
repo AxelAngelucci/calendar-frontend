@@ -12,6 +12,7 @@ const DayDetail = () => {
     const { isSuccess, data, isLoading, isError } = useDayDetailQuery(day);
     if (isSuccess) {
         return (
+            //@ts-ignore
             <Detail day={data} />
         );
     }

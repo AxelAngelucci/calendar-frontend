@@ -13,6 +13,7 @@ interface CalendarDayItemI {
 }
 const CalendarDayItem = ({ index, actualDate, startDayOfMonth, data }: CalendarDayItemI) => {
     if (data?.find) {
+        //@ts-ignore
         const dayData: NasaResponseI | undefined = data?.find((day: NasaResponseI) => day.date === (actualDate && actualDate.toFormat('y-MM-dd')));
         const image: String = (dayData && isImage(dayData.url)) ? dayData.url : "https://www.campana.gob.ar/wp-content/uploads/2022/05/placeholder-1.png";
         if (dayData) {
